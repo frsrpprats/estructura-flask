@@ -13,6 +13,7 @@ uv venv
 ## Crear Proyecto
 ```
 uv init nombre-proyecto
+uv init # si el proyecto ya existe
 ```
 ## Agregar dependencias 
 ```
