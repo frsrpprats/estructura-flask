@@ -30,4 +30,4 @@ RUN chown -R flaskapp:flaskapp /home/flaskapp
 ENV VIRTUAL_ENV="/home/flaskapp/.venv"
 
 EXPOSE 5000
-CMD ["granian", "--port", "5000", "--host", "0.0.0.0", "--http", "auto", "--workers", "4", "--blocking-threads", "4", "--backlog", "2048"]
+CMD ["granian", "--port", "5000", "--host", "0.0.0.0", "--http", "auto", "--workers", "4", "--blocking-threads", "4", "--backlog", "2048", "--interface", "wsgi", "wsgi:app"]

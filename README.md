@@ -6,15 +6,17 @@
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 3. Reiniciar la PC.
-## Instalación de Envtorno Virtual venv
-```
-uv venv
-```
 ## Crear Proyecto
 ```
 uv init nombre-proyecto
 uv init # si el proyecto ya existe
 ```
+
+## Instalación de Envtorno Virtual venv
+```
+uv venv
+```
+
 ## Agregar dependencias 
 ```
 uv add flask==3.1.2
